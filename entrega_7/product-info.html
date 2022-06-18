@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://getbootstrap.com/docs/4.3/examples/album/ -->
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <title>eMercado - Todo lo que busques está aquí</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="site-header sticky-top py-1 bg-dark">
+    <div class="container d-flex flex-column flex-md-row justify-content-between">
+      <a class="py-2 d-none d-md-inline-block" href="index.html">Inicio</a>
+      <a class="py-2 d-none d-md-inline-block" href="categories.html">Categorías</a>
+      <a class="py-2 d-none d-md-inline-block" href="products.html">Productos</a>
+      <a class="py-2 d-none d-md-inline-block" href="sell.html">Vender</a>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="barraUs" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="cart.html">Mi carrito</a>
+          <a class="dropdown-item" href="my-profile.html">Mi perfil</a>
+          <a class="dropdown-item" id="logOut" href="index.html">Cerrar sesión</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main role="main">
+    <div class="container mt-5">
+      <div class="text-center p-4">
+        <h2>Descripción del producto</h2>
+        <p class="lead">Encontrarás aquí toda la información del producto seleccionado.</p>
+        <p class="small alert-warning py-3"><strong>Nota: </strong>por simplicidad, cualquiera sea el producto
+          seleccionado previamente, siempre se visualizará el presente: <strong>Chevrolet Onix Joy</strong>.</p>
+      </div>
+      <h3 id="productName"></h3>
+      <hr class="my-3">
+      <dl>
+        <dt>Imágenes ilustrativas</dt>
+        <dd>
+          <div class="row text-center text-lg-left pt-2" id="productImagesGallery">
+          </div>
+        </dd>
+
+        <dt>Costo del producto</dt>
+        <dd>
+          <p id="productCost"></p>
+        </dd>
+
+        <dt>Cantidad de productos vendidos</dt>
+        <dd>
+          <p id="productSoldCount"></p>
+        </dd>
+
+        <dt>Categoría del producto</dt>
+        <dd>
+          <a href="category-info.html" id="productCategory"></a>
+        </dd>
+
+        <dt>Descripción</dt>
+        <dd>
+          <p id="productDescription"></p>
+        </dd>
+      </dl>
+      <a type="button" class="btn btn-light btn-lg btn-block" href="cart.html">Añadir al carrito</a>
+      <h2>Opiniones sobre el producto</h2>
+      <div class="row">
+        <div class="list-group-item list-group-item-action" id="comentarios">
+        </div>
+      </div>
+      </br>
+      <h3>Deja tu opinión acerca del producto</h3>
+      <form>
+        <p class="clasificacion">
+          <input id="radio1" type="radio" name="estrellas" value="5">
+          <label for="radio1">★</label>
+          <input id="radio2" type="radio" name="estrellas" value="4">
+          <label for="radio2">★</label>
+          <input id="radio3" type="radio" name="estrellas" value="3">
+          <label for="radio3">★</label>
+          <input id="radio4" type="radio" name="estrellas" value="2">
+          <label for="radio4">★</label>
+          <input id="radio5" type="radio" name="estrellas" value="1">
+          <label for="radio5">★</label>
+        </p>
+        <p>Comentario:
+          <input class="form-control" rows="3"></input>
+        </p>
+        <p><input type="submit" name="submit" value="Enviar"></p>
+      </form>
+      <form>
+
+      </form>
+    </div>
+    <div class="container mt-2">
+      <dl>
+        </br>
+        <h4><strong>Productos relacionados</strong></h4>
+        <dd>
+          <div class="row text-center text-lg-left pt-2" id="relatedProducts">
+          </div>
+        </dd>
+      </dl>
+    </div>
+  </main>
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-right">
+        <a href="#">Volver arriba</a>
+      </p>
+      <p>Este sitio forma parte de Desarrollo Web - JAP - 2020</p>
+      <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+    </div>
+  </footer>
+  <div id="spinner-wrapper">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/product-info.js"></script>
+</body>
+
+</html>
